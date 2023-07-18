@@ -6,10 +6,10 @@ const App = () => {
   let [parent, setParent] = useState("");
   
   return (
-    <div>
+    <div className="parent">
          <h3>Parent component</h3>
-         <Child changeParent={setParent}/>
          <p>{parent}</p>
+         <Child changeParent={setParent}/>
     </div>
   )
 }
